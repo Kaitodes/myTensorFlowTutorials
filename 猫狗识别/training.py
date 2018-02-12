@@ -50,7 +50,7 @@ def run_training():
 	summary_op = tf.summary.merge_all()  
 
 	gpu_options = tf.GPUOptions()
-	config = tf.ConfigProto(gpu_options=gpu_options, log_device_placement = True,allow_soft_placement = False)
+	config = tf.ConfigProto(gpu_options=gpu_options, log_device_placement = True,allow_soft_placement = True)
 	sess = tf.Session(config=config)
 	# 保存summary
 	train_writer = tf.summary.FileWriter(logs_train_dir, sess.graph)  
