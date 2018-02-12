@@ -10,8 +10,12 @@ python debug.py cat -n 200 -f 10
 
 ## 2 整理图片
 （python2）
+
 python renameImgs.py
 
 ## 3 训练,测试
+（python2）
+
 python training.py
+
 python evaluateCatOrDog.py
